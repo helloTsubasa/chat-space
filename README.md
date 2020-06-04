@@ -6,7 +6,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|mail|string|null: false, unique: true|
+|mail|string||
 
 ### Association
 - has_many :messages
