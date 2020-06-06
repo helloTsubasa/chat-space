@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+.Wrapper{
+  display: flex;
+  height: 100vh;
+  @import "modules/side_bar";
+  @import "modules/chat_main";
+}
