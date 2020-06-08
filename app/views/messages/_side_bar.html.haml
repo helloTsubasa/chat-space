@@ -2,14 +2,14 @@
   .Side-bar__user-name
     .Top-list
       .Top-list__name
-        たろう
+        = current_user.name
       %ul.Top-list__icons
         %li.Top-list__icons__edit-icon
-        = link_to "#" do
-          = icon('fas', 'edit', class: 'btn-icon')
+          = link_to "#" do
+            = icon('fas', 'edit', class: 'btn-icon')
         %li.Top-list__icons__cog-icon
-        = link_to "#" do
-          = icon('fas', 'cog', class: 'btn-icon')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'btn-icon')
   
   .Side-bar__group-list
     .Group
