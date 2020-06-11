@@ -28,14 +28,13 @@
         &__edit-icon{
           margin-right: 5px;
         }
-        &__cog-icon{
-        }
       }
     }
   }
   &__group-list{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    overflow: scroll;
     .Group{
       .group-box{
         color: #ffffff;
