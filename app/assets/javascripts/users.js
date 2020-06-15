@@ -2,8 +2,8 @@ $(function(){
   $(".SettingGroupForm__input").on("keyup", function() {
     let input = $(".SettingGroupForm__input").val();    //フォームの値を取得して変数に代入する
     $.ajax({
-      type: 'GET';
-      url: '/users';
+      type: 'GET',
+      url: '/users',
       data: { keyword: input },
       dataType: 'json'
     })
