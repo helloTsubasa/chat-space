@@ -54,7 +54,8 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data)
-      console.log(html)
+      $('.Chat-main__message-list').append(html);
+      $('.New-message')[0].reset();
     })
-  })
-})
+  });
+});
