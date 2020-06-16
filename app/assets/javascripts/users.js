@@ -11,7 +11,7 @@ $(function(){
     let html = `<div class="ChatMember clearfix">
                   <p class="ChatMember__name">ユーザーが見つかりません</p>
                 </div>`;
-      $("#UserSearchResult").append(html);
+    $("#UserSearchResult").append(html);
   }
 
   $("#UserSearch__field").on("keyup", function() {
